@@ -82,10 +82,7 @@ html {
 /* Body Color -- Test */
 
 body {
-  background-image: linear-gradient(
-    var(--color-navy-intro) 50%,
-    var(--color-navy-footer) 50%
-  );
+  background-color: var(--color-navy-intro);
 }
 
 /* =================== NAVBAR =================== */
@@ -97,13 +94,12 @@ body {
   z-index: 999;
   display: flex;
   position: absolute;
-  align-items: center;
   justify-content: space-between;
   padding: var(--sp-07) var(--sp-05);
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   display: block;
 }
 
@@ -121,7 +117,7 @@ body {
 
 .navbar a {
   color: var(--color-white);
-  font-size: var(--font-02);
+  font-size: var(--font-01);
   font-family: var(--font-body-family);
 }
 
@@ -146,8 +142,8 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 300px;
-  height: 200px;
+  top: 250px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -268,9 +264,8 @@ body {
 }
 
 .ftr02-img {
+  width: 400px;
   margin: 0 auto;
-  /* width: 400px; */
-  max-width: 450px;
 }
 
 .features02 h2 {
@@ -348,7 +343,6 @@ body {
   margin: 0 auto;
   position: relative;
   max-width: 400px;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: var(--sp-05);
@@ -562,7 +556,7 @@ address .pin {
   border-color: var(--color-teal-cta);
 }
 
-/* =================== DESKTOP TABLET  =================== */
+/* ===================  TABLET  =================== */
 
 @media (min-width: 500px) and (max-width: 767px) {
   .footer {
@@ -574,12 +568,16 @@ address .pin {
   }
 }
 
-/* =================== DESKTOP DESIGN  =================== */
+/* =================== DESKTOP   =================== */
 
 @media (min-width: 768px) {
   .navbar {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .logo {
+    width: 100px;
   }
 
   .navbar a {
@@ -687,6 +685,10 @@ address .pin {
     width: 60px;
     height: 60px;
     z-index: -1;
+  }
+
+  .testimonial {
+    min-width: 300px;
   }
 
   /* .testimonial:first-child::before {
