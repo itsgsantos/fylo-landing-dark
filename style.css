@@ -79,6 +79,15 @@ html {
   font-smooth: antialiased;
 }
 
+/* Body Color -- Test */
+
+body {
+  background-image: linear-gradient(
+    var(--color-navy-intro) 50%,
+    var(--color-navy-footer) 50%
+  );
+}
+
 /* =================== NAVBAR =================== */
 
 .navbar {
